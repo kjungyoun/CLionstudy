@@ -47,4 +47,7 @@ int main() {
     }
 
     printf("%d\n",peek(&s));
+    printf("%d\n",pop(&s));
+    printf("%d\n",pop(&s));
+
 }
