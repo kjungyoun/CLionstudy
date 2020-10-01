@@ -1,0 +1,3 @@
+/Users/youn/CLionstudy/task2_secSol/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/youn/CLionstudy/task2_secSol/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/youn/CLionstudy/task2_secSol/cmake-build-debug/CMakeFiles/task2_secSol.dir
