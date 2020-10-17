@@ -12,6 +12,7 @@ int main() {
     delete(&list,2);
     delete_first(&list);
     delete_last(&list);
+    print_list(&list);
 
     return 0;
 }

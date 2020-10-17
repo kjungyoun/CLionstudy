@@ -10,15 +10,11 @@
 string.h
 -
 
-/Users/youn/CLionstudy/double_linked_list/double_linked_list.c
-stdlib.h
--
-stdio.h
--
-double_linked_list.h
-/Users/youn/CLionstudy/double_linked_list/double_linked_list.h
-
 /Users/youn/CLionstudy/double_linked_list/double_linked_list.h
 chicken.h
 /Users/youn/CLionstudy/double_linked_list/chicken.h
+
+/Users/youn/CLionstudy/double_linked_list/main.c
+double_linked_list.h
+/Users/youn/CLionstudy/double_linked_list/double_linked_list.h
 

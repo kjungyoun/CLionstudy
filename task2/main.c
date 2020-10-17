@@ -51,7 +51,7 @@ void dequeueDel(Queue *q, int maxDel){
     }
 }
 
-int priceSum(Queue *q){
+void priceSum(Queue *q){
     int sum = 0;
     for(int i = 0; i <= q->rear - orderCount; i++) {
         sum += q->data[i].price;
@@ -60,7 +60,7 @@ int priceSum(Queue *q){
     printf("------------------------------------\n");
 }
 
-chicken orderList(Queue *q){
+void orderList(Queue *q){
     if(is_empty(q)) ;
     printf("현재 남은 배달주문 리스트\n");
     printf("------------------------------------\n");
