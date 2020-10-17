@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/youn/CLionstudy/double_linked_list/chicken.h
+string.h
+-
+
+/Users/youn/CLionstudy/double_linked_list/double_linked_list.c
+stdlib.h
+-
+stdio.h
+-
+double_linked_list.h
+/Users/youn/CLionstudy/double_linked_list/double_linked_list.h
+
+/Users/youn/CLionstudy/double_linked_list/double_linked_list.h
+chicken.h
+/Users/youn/CLionstudy/double_linked_list/chicken.h
+
