@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/youn/CLionstudy/linked_list_task/barbell.c
+string.h
+-
+stdio.h
+-
+barbell.h
+/Users/youn/CLionstudy/linked_list_task/barbell.h
+
+/Users/youn/CLionstudy/linked_list_task/barbell.h
+
