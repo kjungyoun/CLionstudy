@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/youn/CLionstudy/middletest/lank.c
+lank.h
+/Users/youn/CLionstudy/middletest/lank.h
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+/Users/youn/CLionstudy/middletest/lank.h
+queue_list.h
+/Users/youn/CLionstudy/middletest/queue_list.h
+lankNode.h
+/Users/youn/CLionstudy/middletest/lankNode.h
+
+/Users/youn/CLionstudy/middletest/lankNode.h
+queue_list.h
+/Users/youn/CLionstudy/middletest/queue_list.h
+
+/Users/youn/CLionstudy/middletest/node.h
+user.h
+/Users/youn/CLionstudy/middletest/user.h
+
+/Users/youn/CLionstudy/middletest/queue_list.h
+node.h
+/Users/youn/CLionstudy/middletest/node.h
+
+/Users/youn/CLionstudy/middletest/user.h
+
