@@ -21,7 +21,7 @@ void init_lank(lank *l, lank *a, lank *b, lank *c, lank *d, lank *e){
     e->head = NULL;
     e->size = 0;
 };
-void push(lank *l, queue *data){ // 노드 데이터에 큐 연결 리스트를 추가 (큐 안에 큐)
+void push(lank *l, queue *data){ // 각 랭크 큐안에 4개의 포지션 큐를 삽입 (큐 안에 큐)
     lankNode *new = (lankNode *)malloc(sizeof(lankNode));
     new->data = data;
     new->prev = NULL;
@@ -38,6 +38,7 @@ void push(lank *l, queue *data){ // 노드 데이터에 큐 연결 리스트를 
 };
 
 void enqueueData(lank *l, user data){
+    // 각 유저 정보에서 포지션 별로 구분해 서로 다른 큐에 저장
     int data1 = strcmp(data.position, "상단");
     int data2 = strcmp(data.position, "중단");
     int data3 = strcmp(data.position, "하단");
@@ -55,10 +56,10 @@ void enqueueData(lank *l, user data){
         queue *k = l->head->next->next->next->data;
         enqueue(k, data);
     }
-    scan(l);
+    scan(l); // 데이터 입력마다 해당 랭크의 포지션 별 인원 확인 매칭
 };
 
-void scan(lank *l){ // 랭크별 포지션 인원이 2명 이상 모였는지 확인
+void scan(lank *l){ // 랭크별 포지션 인원이 2명 이상 모였는지 확인 및 모든 포지션에 2명 이상이면 매칭
     int sum = 0;
     lankNode *p = l->head;
     do{
@@ -76,11 +77,7 @@ void scan(lank *l){ // 랭크별 포지션 인원이 2명 이상 모였는지 �
         printf("매치 랭크: ");
         printf("[%s]\n",grade); // 매칭 등급 표시
         printf("치킨      vs      짜장\n");
-        do{ // 해당 등급의 상단 포지션부터 2명씩 출력
-//            for(int j=0; j< 2; j++){ // 해당 포지션의 2 유저 출력
-//                user data = dequeue(p->data);
-//                printf("[%s, %s]                ",data.id,data.position);
-//            }
+        do{ // 각 포지션 별로 2개의 유저만 추출
             printMatch(dequeue(p->data),dequeue(p->data));
             p = p->next; // 해당 등급의 다음 포지션을 가리킴
             printf("\n");

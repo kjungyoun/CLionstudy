@@ -26,6 +26,14 @@ lankNode.h
 queue_list.h
 /Users/youn/CLionstudy/middletest/queue_list.h
 
+/Users/youn/CLionstudy/middletest/main.c
+stdio.h
+-
+queue_list.h
+/Users/youn/CLionstudy/middletest/queue_list.h
+lank.h
+/Users/youn/CLionstudy/middletest/lank.h
+
 /Users/youn/CLionstudy/middletest/node.h
 user.h
 /Users/youn/CLionstudy/middletest/user.h

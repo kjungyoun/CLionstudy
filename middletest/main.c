@@ -109,6 +109,6 @@ int main() {
     enqueueData(&rock,createUser("연쇄할인범", "돌","옆구리"));
     enqueueData(&rock,createUser("우리사이 고멘나사이", "돌","하단"));
 
-    printRemainAll(&rock,&bronze,&silver,&gold,&ura,&viv);
+    printRemainAll(&rock,&bronze,&silver,&gold,&ura,&viv); //시스템 종료시 최종으로 출력
     return 0;
 }
